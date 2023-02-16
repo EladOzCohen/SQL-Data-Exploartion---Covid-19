@@ -2,7 +2,7 @@
 
 
 
-## Q1: Is there a relationship between COVID spread and vaccination rate? (Aggregated by country and month).
+### Q1: Is there a relationship between COVID spread and vaccination rate? (Aggregated by country and month).
 
 ```SQL
 SELECT v.location 'Country',
@@ -19,8 +19,8 @@ ORDER BY 1,2
 
 
 
--- Q2: Calculating For each country the fully vacitaed citizens as a percentage of population. 
--- Note: The calculation was executed for countries with population over 1 million.
+### Q2: Calculating For each country the fully vacitaed citizens as a percentage of population. 
+(Note: The calculation was executed for countries with population over 1 million)
 
 ```SQL
 WITH temp_table
@@ -45,8 +45,8 @@ ORDER BY 2
 
 
 
--- Q3) Listing the countries that were the first to reach herd immunity.
--- Note: Although a controversial topic, for the sake of practice I choose to define herd immunity as fully vacinating atleast 70% of the population.
+### Q3: Listing the countries that were the first to reach herd immunity.
+(Note: Although a controversial topic, for the sake of practice I choose to define herd immunity as fully vacinating atleast 70% of the population)
 
 ```SQL
 WITH temp_table
