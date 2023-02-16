@@ -34,10 +34,10 @@ ORDER BY 1,2
 ```SQL
 WITH temp_table
 AS(
-SELECT v.location 'Country',
-		v.people_fully_vaccinated,
-		cd.population,
-	   (v.people_fully_vaccinated/cd.population)* 100 'Percent Population Fully Vacinated'
+SELECT  v.location 'Country',
+ 	v.people_fully_vaccinated,
+	cd.population,
+	(v.people_fully_vaccinated/cd.population)* 100 'Percent Population Fully Vacinated'
 FROM  vaccinations v INNER JOIN coviddeaths  cd 
 ON cd.date = v.date AND cd.location = v.location
 GROUP BY v.location, v.people_fully_vaccinated ,cd.population
@@ -66,11 +66,11 @@ ORDER BY 2
 ```SQL
 WITH temp_table
 AS(
-SELECT v.location 'Country',
-		v.people_fully_vaccinated,
-		cd.date 'date_time',
-		cd.population,
-	   (v.people_fully_vaccinated/cd.population)* 100 'Percent Population Fully Vacinated'
+SELECT  v.location 'Country',
+	v.people_fully_vaccinated,
+	cd.date 'date_time',
+	cd.population,
+	(v.people_fully_vaccinated/cd.population)* 100 'Percent Population Fully Vacinated'
 FROM  vaccinations v INNER JOIN coviddeaths  cd 
 ON cd.date = v.date AND cd.location = v.location
 GROUP BY v.location, cd.date, v.people_fully_vaccinated ,cd.population
