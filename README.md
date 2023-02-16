@@ -1,7 +1,7 @@
 # SQL-Data-Exploartion-Covid-19
 
 
-===========
+
 
 
 
@@ -19,17 +19,16 @@ ON cd.date = v.date AND cd.location = v.location
 GROUP BY v.location, CONVERT(NVARCHAR(7),v.date,111)
 ORDER BY 1,2
 ```
-
-
-===========
-
-
+<br>
+</br>
 
 
 
 
 
-### Q2: Calculating For each country the fully vacitaed citizens as a percentage of population. 
+
+
+### Q2: Calculating For each country the fully vaccinated citizens as a percentage of population. 
 (Note: The calculation was executed for countries with population over 1 million)
 
 ```SQL
@@ -55,7 +54,9 @@ ORDER BY 2
 
 
 
-===========
+<br>
+</br>
+
 
 
 
