@@ -1,9 +1,14 @@
 # SQL-Data-Exploartion-Covid-19
 
 
+===========
+
+
+
 
 ### Q1: Is there a relationship between COVID spread and vaccination rate? (Aggregated by country and month).
-
+ 
+ 
 ```SQL
 SELECT v.location 'Country',
 	   CONVERT(NVARCHAR(7),v.date,111) 'Date',
@@ -14,6 +19,11 @@ ON cd.date = v.date AND cd.location = v.location
 GROUP BY v.location, CONVERT(NVARCHAR(7),v.date,111)
 ORDER BY 1,2
 ```
+
+
+===========
+
+
 
 
 
@@ -42,6 +52,10 @@ HAVING MAX([Percent Population Fully Vacinated]) <= 100 /*Note: due to vaccinati
 	                                            	exceded vacinating 100% of their population, thus removed from output*/
 ORDER BY 2
 ```
+
+
+
+===========
 
 
 
