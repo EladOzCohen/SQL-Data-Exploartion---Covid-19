@@ -10,7 +10,7 @@
  
  
 ```SQL
-SELECT v.location 'Country',
+SELECT     v.location 'Country',
 	   CONVERT(NVARCHAR(7),v.date,111) 'Date',
 	   SUM(cd.new_cases) 'New Cases',
 	   SUM(v.daily_vaccinations) 'Vaccinations',
