@@ -1,5 +1,6 @@
 # SQL-Data-Exploartion-Covid-19
 
+In this project I explored some of the COVID-19 data from https://ourworldindata.org/.
 
 
 
@@ -140,3 +141,8 @@ ORDER BY 2 DESC
 |Panama	| 2022-05-13|
 |Thailand |	2022-03-30|
 |South America |2022-03-05|
+
+```
+
+It appears that not all those who were to first to reach herd immunity also ended being the most (fully) vaccinated countries.
+Perhaps the rate of vaccinations in former countries reached a platoo when these countries achieved herd immunity. 
