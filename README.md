@@ -144,5 +144,5 @@ ORDER BY 2 DESC
 
 ```
 
-It appears that not all those who were to first to reach herd immunity also ended being the most (fully) vaccinated countries.
-Perhaps the rate of vaccinations in former countries reached a platoo when these countries achieved herd immunity. 
+##### It appears that not all those who were to first to reach herd immunity also ended being the most (fully) vaccinated countries.
+##### Perhaps the rate of vaccinations in former countries reached a platoo when these countries achieved herd immunity. 
